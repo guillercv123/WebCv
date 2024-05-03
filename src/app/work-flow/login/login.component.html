@@ -1,0 +1,27 @@
+<div class="d-flex justify-content-center align-items-center bg-fondo" style="height: 100vh">
+       <div class="card"  >
+         <div class="card-header p-0 m-0">
+           <img src="./assets/img/logo.jpeg" style="height: 250px" class="card-img-top img-fluid imagen-a-ocultar" alt="...">
+         </div>
+         <div class="card-body text-center">
+           <h5 class="card-title pb-3 font-bold-ubuntu">INICIO DE SESIÓN</h5>
+           <div class="row g-0 font-regular-ubuntu" [formGroup]="authPresenter.form">
+             <div class="col-md-12">
+               <div class="input-group mb-3">
+                 <span class="input-group-text" id="basic-usuario"><i class="fa-solid fa-user"></i></span>
+                 <input type="text" formControlName="user" class="form-control text-center" placeholder="Usuario..." aria-label="Usuario" aria-describedby="basic-usuario">
+               </div>
+             </div>
+             <div class="col-md-12">
+               <div class="input-group mb-3">
+                 <span class="input-group-text" id="basic-password"><i class="fa-solid fa-lock"></i></span>
+                 <input type="password" formControlName="password" class="form-control text-center" placeholder="Password..." aria-label="password" aria-describedby="basic-password">
+               </div>
+             </div>
+             <div class="col-md-12 m-2">
+               <button type="button" class="btn btn-secondary font-bold-ubuntu" [disabled]="authPresenter.form.invalid">INGRESAR <i class="fa-solid fa-right-to-bracket"></i></button>
+             </div>
+           </div>
+         </div>
+       </div>
+</div>

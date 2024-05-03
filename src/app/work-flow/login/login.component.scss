@@ -1,0 +1,16 @@
+.bg-fondo{
+  background-image: url("/assets/img/bg.jpeg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+@media (max-width: 1000px) {
+  .imagen-a-ocultar {
+    display: none;
+  }
+}
+@media (min-width: 1000px) {
+  .card {
+    width: 25rem;
+  }
+}

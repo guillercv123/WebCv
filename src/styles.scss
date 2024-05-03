@@ -1,1 +1,18 @@
 /* You can add global styles to this file, and also import other style files */
+@font-face {
+  font-family: 'Ubuntu Sans Mono Regular';
+  src: url('assets/font/Ubuntu_Sans_Mono/static/UbuntuSansMono-Regular.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Ubuntu Sans Mono Bold';
+  src: url('assets/font/Ubuntu_Sans_Mono/static/UbuntuSansMono-Bold.ttf') format('truetype');
+}
+
+.font-regular-ubuntu {
+  font-family: 'Ubuntu Sans Mono Regular', monospace;
+}
+
+.font-bold-ubuntu {
+  font-family: 'Ubuntu Sans Mono Bold', monospace;
+}

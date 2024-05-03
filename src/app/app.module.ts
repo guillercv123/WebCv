@@ -5,10 +5,14 @@ import {RouterOutlet} from "@angular/router";
 import {BrowserAnimationsModule} from "@angular/platform-browser/animations";
 import {CommonModule} from "@angular/common";
 import {AppRoutingModule} from "./app-routing.module";
+import {FormsModule, ReactiveFormsModule} from "@angular/forms";
+import {LoginComponent} from "./work-flow/login/login.component";
+import {AuthPresenter} from "./Common/Components/Presenters/Auth.presenter";
 
 @NgModule({
   declarations: [
     AppComponent,
+    LoginComponent
   ],
   imports: [
     BrowserModule,
@@ -16,8 +20,12 @@ import {AppRoutingModule} from "./app-routing.module";
     AppRoutingModule,
     BrowserAnimationsModule,
     RouterOutlet,
+    ReactiveFormsModule,
+    FormsModule,
   ],
-  providers: [],
+  providers: [
+    AuthPresenter
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule {
