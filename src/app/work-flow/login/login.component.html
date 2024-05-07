@@ -19,7 +19,7 @@
                </div>
              </div>
              <div class="col-md-12 m-2">
-               <button type="button" class="btn btn-secondary font-bold-ubuntu" [disabled]="authPresenter.form.invalid">INGRESAR <i class="fa-solid fa-right-to-bracket"></i></button>
+               <button type="button" class="btn btn-secondary font-bold-ubuntu" (click)="signIn()" [disabled]="authPresenter.form.invalid">INGRESAR <i class="fa-solid fa-right-to-bracket"></i></button>
              </div>
            </div>
          </div>

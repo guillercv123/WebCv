@@ -8,6 +8,7 @@ import {AppRoutingModule} from "./app-routing.module";
 import {FormsModule, ReactiveFormsModule} from "@angular/forms";
 import {LoginComponent} from "./work-flow/login/login.component";
 import {AuthPresenter} from "./Common/Components/Presenters/Auth.presenter";
+import {HttpClientModule} from "@angular/common/http";
 
 @NgModule({
   declarations: [
@@ -16,6 +17,7 @@ import {AuthPresenter} from "./Common/Components/Presenters/Auth.presenter";
   ],
   imports: [
     BrowserModule,
+    HttpClientModule,
     CommonModule,
     AppRoutingModule,
     BrowserAnimationsModule,

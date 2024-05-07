@@ -24,7 +24,7 @@ export class AuthPresenter {
     }
 
     setValue(form: IAuth){
-        this.user.setValue(form.user);
+        this.user.setValue(form.userName);
         this.password.setValue(form.password);
     }
 }
